@@ -1,0 +1,13 @@
+M
+2
+3
+//Map input file with four 4x4 levels
+//level 0
+.S.
+..#
+E..
+//level 1
+...
+.#.
+E.H
+

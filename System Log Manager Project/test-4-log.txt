@@ -1,0 +1,11 @@
+09:99:00:55:51|UI-PANE1|Window received focus.
+09:99:00:55:54|Thread #4| closing.
+06:02:11:20:08|DB Mgr|Thread #4 closing.
+01:07:08:12:00|UI-PANE2|Thread #4 closing.
+04:25:21:54:21|Thread|Thread #4 closing.
+09:29:23:41:20|DB Mgr|Thread #4 closing.
+12:15:20:56:50|UI-PANE1|Thread #4 closing.
+04:25:21:53:21|Thread|Thread #4 closing.
+07:02:10:12:43|PGM|Thread #4 closing.
+07:02:10:13:00|PGM|Thread #4 closing.
+04:25:21:55:36|Thread|Thread #4 closing.

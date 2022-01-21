@@ -1,0 +1,31 @@
+Round: 1
+Created: John (distance: 21, speed: 35, health: 60)
+Created: Tony (distance: 32, speed: 1, health: 2)
+Created: Luke (distance: 1, speed: 1, health: 1)
+Created: captain (distance: 12, speed: 54, health: 2)
+Created: yonkers (distance: 1, speed: 28, health: 9)
+Destroyed: captain (distance: 12, speed: 54, health: 0)
+At the end of round 1, the median zombie lifetime is 1
+Round: 2
+Moved: John (distance: 0, speed: 35, health: 60)
+Moved: Tony (distance: 31, speed: 1, health: 2)
+Moved: Luke (distance: 0, speed: 1, health: 1)
+Moved: yonkers (distance: 0, speed: 28, health: 6)
+DEFEAT IN ROUND 2! John ate your brains!
+Zombies still active: 4
+First zombies killed:
+captain 1
+Last zombies killed:
+captain 1
+Most active zombies:
+John 2
+Luke 2
+Tony 2
+yonkers 2
+captain 1
+Least active zombies:
+captain 1
+John 2
+Luke 2
+Tony 2
+yonkers 2

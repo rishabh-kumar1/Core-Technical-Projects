@@ -1,0 +1,11 @@
+# Test Case with 20 zombies
+quiver-capacity: 2
+random-seed: 10
+max-rand-distance: 29
+max-rand-speed: 19
+max-rand-health: 2
+---
+round: 3
+random-zombies: 19
+named-zombies: 1
+Happy distance: 2 speed: 10 health: 4

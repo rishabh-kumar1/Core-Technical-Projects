@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "initializer_list": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "tuple": "cpp",
+        "string_view": "cpp",
+        "utility": "cpp"
+    }
+}

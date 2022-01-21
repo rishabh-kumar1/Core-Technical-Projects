@@ -1,0 +1,11 @@
+# Test case with one zombie
+quiver-capacity: 20
+random-seed: 1493
+max-rand-distance: 20
+max-rand-speed: 40
+max-rand-health: 80
+---
+round: 1
+random-zombies: 1
+named-zombies: 0
+

@@ -1,0 +1,16 @@
+s
+s
+s
+g
+g
+c TCPPPPP
+c DB--Mgr-
+k #Beginning
+g
+r
+p
+d 1
+k CID
+l
+c UI-PANE2([]
+q

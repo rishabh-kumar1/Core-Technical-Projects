@@ -1,0 +1,18 @@
+# hello 
+k summer
+k absolute
+k load print-state,valid[;'./,'breakdown
+g
+p
+r
+s
+q
+a 432432
+a 4
+l
+l
+l
+d 3 
+t 00:00:00:00:99|98:69:66:02:24
+m 04:25:21:55:52
+q

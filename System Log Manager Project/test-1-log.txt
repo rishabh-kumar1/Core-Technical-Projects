@@ -1,0 +1,13 @@
+07:02:10:13:00|PGM|Finished master election (master hostname=CAEN1695-p14).
+04:25:21:55:36|Thread|Thread #4 closing.
+04:25:21:55:36|Thread|Interrupt event on CPU 3
+99:25:21:55:37|Thread|Thread #12 joined on thread #4
+08:23:12:03:15|TCP|Connection to client lost. (CID #8432)
+01:23:10:03:00|ALRM|Alarm event raised by process (PID #5432)
+23:25:21:55:50|Thread|Thread #10 attempted to grab lock #3 held by thread #4
+04:25:21:55:50|Thread|Thread #10 attempted to grab lock #3 held by thread #4
+45:25:21:55:50|Thread|Thread #10 attempted to grab lock #3 held by thread #4
+04:25:21:55:52|Threads|Thread #11 attempted to grab locks #3 held by thread #4543223444
+04:25:21:55:36|Thread|Interrupt event on CPU 3 printSTATE state print!@
+04:25:21:55:37|Thread|Thread #12 joined on thread #4 #4 !!!!!! %%%%summer%%%##$$absolute@@@
+87:23:12:03:15|TCPtreiugheriubgviudfhbviuefhgiuethiugethjiugetiught4iughtiu|Connection to client lost. (CID #8432)

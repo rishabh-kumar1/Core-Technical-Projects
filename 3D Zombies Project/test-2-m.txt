@@ -1,0 +1,24 @@
+# Test case with 5 named zombies
+quiver-capacity: 5
+random-seed: 150
+max-rand-distance: 60
+max-rand-speed: 60
+max-rand-health: 35
+---
+round: 1
+random-zombies: 0
+named-zombies: 5
+John distance: 21 speed: 35 health: 60
+Tony distance: 32 speed: 1 health: 2
+Luke distance: 1 speed: 1 health: 1
+captain distance: 12 speed: 54 health: 2 
+yonkers distance: 1 speed: 28 health: 9
+---
+round: 3
+random-zombies: 0
+named-zombies: 5
+gghj distance: 21 speed: 35 health: 60
+jkhkjh distance: 32 speed: 1 health: 2
+bmlpp distance: 1 speed: 1 health: 1
+dsdfsdf distance: 12 speed: 54 health: 2 
+kiyygf distance: 1 speed: 28 health: 9

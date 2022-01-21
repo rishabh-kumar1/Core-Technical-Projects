@@ -1,0 +1,91 @@
+Round: 1
+Created: paoletti0 (distance: 5, speed: 17, health: 1)
+Created: darden1 (distance: 4, speed: 12, health: 2)
+Created: garcia2 (distance: 20, speed: 13, health: 2)
+Created: cris3 (distance: 19, speed: 4, health: 2)
+Created: bing4 (distance: 21, speed: 7, health: 1)
+Created: will5 (distance: 23, speed: 3, health: 1)
+Created: fee6 (distance: 18, speed: 16, health: 1)
+Created: noah7 (distance: 25, speed: 6, health: 1)
+Created: potatobot8 (distance: 17, speed: 7, health: 1)
+Created: paoletti9 (distance: 10, speed: 8, health: 1)
+Created: darden10 (distance: 27, speed: 7, health: 1)
+Created: garcia11 (distance: 29, speed: 9, health: 2)
+Created: cris12 (distance: 11, speed: 17, health: 2)
+Created: bing13 (distance: 1, speed: 6, health: 2)
+Created: will14 (distance: 29, speed: 19, health: 2)
+Created: fee15 (distance: 14, speed: 5, health: 1)
+Created: noah16 (distance: 17, speed: 14, health: 1)
+Created: potatobot17 (distance: 15, speed: 1, health: 2)
+Created: paoletti18 (distance: 17, speed: 8, health: 1)
+Created: Happy (distance: 2, speed: 10, health: 4)
+Destroyed: paoletti0 (distance: 5, speed: 17, health: 0)
+At the end of round 1, the median zombie lifetime is 1
+Round: 2
+Moved: darden1 (distance: 0, speed: 12, health: 2)
+Moved: garcia2 (distance: 7, speed: 13, health: 2)
+Moved: cris3 (distance: 15, speed: 4, health: 2)
+Moved: bing4 (distance: 14, speed: 7, health: 1)
+Moved: will5 (distance: 20, speed: 3, health: 1)
+Moved: fee6 (distance: 2, speed: 16, health: 1)
+Moved: noah7 (distance: 19, speed: 6, health: 1)
+Moved: potatobot8 (distance: 10, speed: 7, health: 1)
+Moved: paoletti9 (distance: 2, speed: 8, health: 1)
+Moved: darden10 (distance: 20, speed: 7, health: 1)
+Moved: garcia11 (distance: 20, speed: 9, health: 2)
+Moved: cris12 (distance: 0, speed: 17, health: 2)
+Moved: bing13 (distance: 0, speed: 6, health: 1)
+Moved: will14 (distance: 10, speed: 19, health: 2)
+Moved: fee15 (distance: 9, speed: 5, health: 1)
+Moved: noah16 (distance: 3, speed: 14, health: 1)
+Moved: potatobot17 (distance: 14, speed: 1, health: 2)
+Moved: paoletti18 (distance: 9, speed: 8, health: 1)
+Moved: Happy (distance: 0, speed: 10, health: 4)
+DEFEAT IN ROUND 2! darden1 ate your brains!
+Zombies still active: 19
+First zombies killed:
+paoletti0 1
+Last zombies killed:
+paoletti0 1
+Most active zombies:
+Happy 2
+bing13 2
+bing4 2
+cris12 2
+cris3 2
+darden1 2
+darden10 2
+fee15 2
+fee6 2
+garcia11 2
+garcia2 2
+noah16 2
+noah7 2
+paoletti18 2
+paoletti9 2
+potatobot17 2
+potatobot8 2
+will14 2
+will5 2
+paoletti0 1
+Least active zombies:
+paoletti0 1
+Happy 2
+bing13 2
+bing4 2
+cris12 2
+cris3 2
+darden1 2
+darden10 2
+fee15 2
+fee6 2
+garcia11 2
+garcia2 2
+noah16 2
+noah7 2
+paoletti18 2
+paoletti9 2
+potatobot17 2
+potatobot8 2
+will14 2
+will5 2

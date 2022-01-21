@@ -1,0 +1,26 @@
+{
+    
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ship_debug",
+            "args": ["-q", "--output", "M", "<", "Sample-Small-L.txt", ">", "Sample_Small-L-output.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            //"cwd": "Users/risha/Desktop/Michigan/EECS281/project1",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

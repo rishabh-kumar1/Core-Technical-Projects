@@ -1,0 +1,37 @@
+# Test Case with big quiver
+quiver-capacity: 20000
+random-seed: 123
+max-rand-distance: 50
+max-rand-speed: 20
+max-rand-health: 8
+---
+round: 1
+random-zombies: 0
+named-zombies: 10
+MarkSchlissel distance: 150 speed: 300 health: 15
+MarySueColeman distance: 2 speed: 3 health: 6
+LeeBollinger distance: 100 speed: 1000 health: 100
+Hello distance: 7 speed: 40 health: 300
+Bye distance: 10 speed: 30 health: 200
+Wrtie distance: 32 speed: 5 health: 150
+Qwerty distance: 32 speed: 9 health: 180
+ASFGAS distance: 1000 speed: 1000 health: 200
+JACK distance: 9000 speed: 23 health: 150
+UIOP distanceL 400 speed: 399 health: 124
+---
+round: 3
+random-zombies: 4
+named-zombies: 5
+MarkSchlissel1234 distance: 150 speed: 300 health: 15
+MarySueColeman5783 distance: 2 speed: 3 health: 6
+LeeBollinger432432i distance: 100 speed: 1 health: 100
+Joey distance: 12 speed: 32 health: 90
+Cole distance: 21 speed: 45 health: 43
+---
+round: 4
+random-zombies: 6
+named-zombies: 4
+MarkSchlissel432432 distance: 150 speed: 300 health: 15
+MarySueColeman87587 distance: 2 speed: 3 health: 6
+LeeBollinger8593943 distance: 100 speed: 1 health: 100
+Hello distance: 50 speed: 3 health: 32

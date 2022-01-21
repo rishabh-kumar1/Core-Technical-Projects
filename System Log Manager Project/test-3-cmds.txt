@@ -1,0 +1,18 @@
+d 2
+d 2
+d 2
+d 4
+d 4
+d 4
+d 2
+# hellofndsjvniefjnvije
+d 6
+d 6
+d 7
+d 7
+d 1
+d 1
+r
+d 2
+l
+q

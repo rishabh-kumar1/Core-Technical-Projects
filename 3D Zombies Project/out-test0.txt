@@ -1,0 +1,188 @@
+Round: 1
+Created: MarkSchlissel (distance: 150, speed: 300, health: 15)
+Created: MarySueColeman (distance: 2, speed: 3, health: 6)
+Created: LeeBollinger (distance: 100, speed: 1000, health: 100)
+Created: Hello (distance: 7, speed: 40, health: 300)
+Created: Bye (distance: 10, speed: 30, health: 200)
+Created: Wrtie (distance: 32, speed: 5, health: 150)
+Created: Qwerty (distance: 32, speed: 9, health: 180)
+Created: ASFGAS (distance: 1000, speed: 1000, health: 200)
+Created: JACK (distance: 9000, speed: 23, health: 150)
+Created: UIOP (distance: 400, speed: 399, health: 124)
+Destroyed: MarySueColeman (distance: 2, speed: 3, health: 0)
+Destroyed: MarkSchlissel (distance: 150, speed: 300, health: 0)
+Destroyed: LeeBollinger (distance: 100, speed: 1000, health: 0)
+Destroyed: Bye (distance: 10, speed: 30, health: 0)
+Destroyed: Hello (distance: 7, speed: 40, health: 0)
+Destroyed: UIOP (distance: 400, speed: 399, health: 0)
+Destroyed: ASFGAS (distance: 1000, speed: 1000, health: 0)
+Destroyed: Qwerty (distance: 32, speed: 9, health: 0)
+Destroyed: Wrtie (distance: 32, speed: 5, health: 0)
+Destroyed: JACK (distance: 9000, speed: 23, health: 0)
+At the end of round 1, the median zombie lifetime is 1
+Round: 2
+At the end of round 2, the median zombie lifetime is 1
+Round: 3
+Created: paoletti0 (distance: 33, speed: 10, health: 7)
+Created: darden1 (distance: 11, speed: 1, health: 3)
+Created: garcia2 (distance: 37, speed: 18, health: 4)
+Created: cris3 (distance: 5, speed: 12, health: 2)
+Created: MarkSchlissel1234 (distance: 150, speed: 300, health: 15)
+Created: MarySueColeman5783 (distance: 2, speed: 3, health: 6)
+Created: LeeBollinger432432i (distance: 100, speed: 1, health: 100)
+Created: Joey (distance: 12, speed: 32, health: 90)
+Created: Cole (distance: 21, speed: 45, health: 43)
+Destroyed: cris3 (distance: 5, speed: 12, health: 0)
+Destroyed: MarySueColeman5783 (distance: 2, speed: 3, health: 0)
+Destroyed: MarkSchlissel1234 (distance: 150, speed: 300, health: 0)
+Destroyed: Cole (distance: 21, speed: 45, health: 0)
+Destroyed: Joey (distance: 12, speed: 32, health: 0)
+Destroyed: garcia2 (distance: 37, speed: 18, health: 0)
+Destroyed: paoletti0 (distance: 33, speed: 10, health: 0)
+Destroyed: darden1 (distance: 11, speed: 1, health: 0)
+Destroyed: LeeBollinger432432i (distance: 100, speed: 1, health: 0)
+At the end of round 3, the median zombie lifetime is 1
+Round: 4
+Created: bing4 (distance: 17, speed: 2, health: 1)
+Created: will5 (distance: 50, speed: 15, health: 8)
+Created: fee6 (distance: 14, speed: 1, health: 7)
+Created: noah7 (distance: 17, speed: 16, health: 2)
+Created: potatobot8 (distance: 10, speed: 3, health: 6)
+Created: paoletti9 (distance: 7, speed: 1, health: 1)
+Created: MarkSchlissel432432 (distance: 150, speed: 300, health: 15)
+Created: MarySueColeman87587 (distance: 2, speed: 3, health: 6)
+Created: LeeBollinger8593943 (distance: 100, speed: 1, health: 100)
+Created: Hello (distance: 50, speed: 3, health: 32)
+Destroyed: MarySueColeman87587 (distance: 2, speed: 3, health: 0)
+Destroyed: MarkSchlissel432432 (distance: 150, speed: 300, health: 0)
+Destroyed: noah7 (distance: 17, speed: 16, health: 0)
+Destroyed: potatobot8 (distance: 10, speed: 3, health: 0)
+Destroyed: will5 (distance: 50, speed: 15, health: 0)
+Destroyed: paoletti9 (distance: 7, speed: 1, health: 0)
+Destroyed: bing4 (distance: 17, speed: 2, health: 0)
+Destroyed: fee6 (distance: 14, speed: 1, health: 0)
+Destroyed: Hello (distance: 50, speed: 3, health: 0)
+Destroyed: LeeBollinger8593943 (distance: 100, speed: 1, health: 0)
+At the end of round 4, the median zombie lifetime is 1
+VICTORY IN ROUND 4! LeeBollinger8593943 was the last zombie.
+Zombies still active: 0
+First zombies killed:
+MarySueColeman 1
+MarkSchlissel 2
+LeeBollinger 3
+Bye 4
+Hello 5
+UIOP 6
+ASFGAS 7
+Qwerty 8
+Wrtie 9
+JACK 10
+cris3 11
+MarySueColeman5783 12
+MarkSchlissel1234 13
+Cole 14
+Joey 15
+garcia2 16
+paoletti0 17
+darden1 18
+LeeBollinger432432i 19
+MarySueColeman87587 20
+MarkSchlissel432432 21
+noah7 22
+potatobot8 23
+will5 24
+paoletti9 25
+bing4 26
+fee6 27
+Hello 28
+LeeBollinger8593943 29
+Last zombies killed:
+LeeBollinger8593943 29
+Hello 28
+fee6 27
+bing4 26
+paoletti9 25
+will5 24
+potatobot8 23
+noah7 22
+MarkSchlissel432432 21
+MarySueColeman87587 20
+LeeBollinger432432i 19
+darden1 18
+paoletti0 17
+garcia2 16
+Joey 15
+Cole 14
+MarkSchlissel1234 13
+MarySueColeman5783 12
+cris3 11
+JACK 10
+Wrtie 9
+Qwerty 8
+ASFGAS 7
+UIOP 6
+Hello 5
+Bye 4
+LeeBollinger 3
+MarkSchlissel 2
+MarySueColeman 1
+Most active zombies:
+ASFGAS 1
+Bye 1
+Cole 1
+Hello 1
+Hello 1
+JACK 1
+Joey 1
+LeeBollinger 1
+LeeBollinger432432i 1
+LeeBollinger8593943 1
+MarkSchlissel 1
+MarkSchlissel1234 1
+MarkSchlissel432432 1
+MarySueColeman 1
+MarySueColeman5783 1
+MarySueColeman87587 1
+Qwerty 1
+UIOP 1
+Wrtie 1
+bing4 1
+cris3 1
+darden1 1
+fee6 1
+garcia2 1
+noah7 1
+paoletti0 1
+paoletti9 1
+potatobot8 1
+will5 1
+Least active zombies:
+ASFGAS 1
+Bye 1
+Cole 1
+Hello 1
+Hello 1
+JACK 1
+Joey 1
+LeeBollinger 1
+LeeBollinger432432i 1
+LeeBollinger8593943 1
+MarkSchlissel 1
+MarkSchlissel1234 1
+MarkSchlissel432432 1
+MarySueColeman 1
+MarySueColeman5783 1
+MarySueColeman87587 1
+Qwerty 1
+UIOP 1
+Wrtie 1
+bing4 1
+cris3 1
+darden1 1
+fee6 1
+garcia2 1
+noah7 1
+paoletti0 1
+paoletti9 1
+potatobot8 1
+will5 1

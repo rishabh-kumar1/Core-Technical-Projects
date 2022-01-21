@@ -1,0 +1,34 @@
+M
+5
+5
+//Map input file with five 5x5 levels
+//level 0
+EEEEE
+EEEEE
+EEEEE
+EEEEE
+EEEEE
+//level 1
+EEEEE
+EEEEE
+EEEEE
+EEEEE
+EEEEE
+//level 2
+EEEEE
+EEEEE
+EEEES
+EEEEE
+EEEEE
+//level 3
+EEEEE
+EEEEE
+EEEEE
+EEEEE
+EEEEE
+//level 4
+EEEEE
+EEEEE
+EHEEE
+EEEEE
+EEEEE

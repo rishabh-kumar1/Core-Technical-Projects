@@ -1,0 +1,9 @@
+Start in level 0, 0, column 1
+//level 0
+.s.
+.s#
+1w.
+//level 1
+...
+.#.
+eeH

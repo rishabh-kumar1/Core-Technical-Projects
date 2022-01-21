@@ -1,0 +1,13 @@
+Round: 1
+Created: paoletti0 (distance: 20, speed: 31, health: 76)
+At the end of round 1, the median zombie lifetime is 0
+Round: 2
+Moved: paoletti0 (distance: 0, speed: 31, health: 56)
+DEFEAT IN ROUND 2! paoletti0 ate your brains!
+Zombies still active: 1
+First zombies killed:
+Last zombies killed:
+Most active zombies:
+paoletti0 2
+Least active zombies:
+paoletti0 2
