@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>insta485</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<div class="header">
+	<a href="/" class="logo">Insta485</a>
+	<img src = "/static/uploads/instalogo.png" alt = "post image" width="30" height="30">
+	<div class="header-right">
+	  <a class="active" href="/explore/">Explore</a>
+	  <a href="/users/{{logname}}/">{{logname}}</a>
+	</div>
+</div>
+<div class = "body">
+	<h1> Following</h1>
+	<p style="padding: 10px; border: 2px solid black;">
+		{% for follow in following %}
+			<img src = "/uploads/{{follow.user_img_url}}" alt = "follow image">
+			<a href = "{{ ''.join(['/users/', follow.username])}}/">{{follow.username}}</a>
+			{% if follow.username == logname %}
+				<br>
+			{% elif follow.logname_follows_username == true %}
+				following
+				<!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+				<form action="{{url_for('show_following')}}?target={{url_for('get_users_following', user_url_slug = curr_user)}}" method="post" enctype="multipart/form-data">
+					<input type="submit" name="unfollow" value="unfollow"/>
+					<input type="hidden" name="username" value="{{follow.username}}"/>
+					<input type="hidden" name="operation" value="unfollow"/>
+				</form>
+			{% else %}
+				not following
+				<!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+				<form action="{{url_for('show_following')}}?target={{url_for('get_users_following', user_url_slug = curr_user)}}" method="post" enctype="multipart/form-data">
+					<input type="submit" name="follow" value="follow"/>
+					<input type="hidden" name="username" value="{{follow.username}}"/>
+					<input type="hidden" name="operation" value="follow"/>
+				</form>
+			{% endif %}
+		{% endfor %}
+</div>

@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# insta485install
+#
+#
+# Stop on errors, print commands
+set -Eeuo pipefail
+set -x
+# create virtual env
+python3 -m venv env
+# activate virtual env
+source env/bin/activate
+# install backend
+pip install -r requirements.txt
+pip install -e .
+# install frontend
+npm ci .
+# install latest chromedriver
+npm install chromedriver --detect_chromedriver_version --no-save

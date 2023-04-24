@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>insta485</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+
+    <div class="header">
+        <a href="/" class="logo">Insta485</a>
+        <img src = "/static/uploads/instalogo.png" alt = "post image" width="30" height="30">
+        <div class="header-right">
+          <a class="active" href="/explore/">Explore</a>
+          <a href="/users/{{logname}}/">{{logname}}</a>
+        </div>
+      </div>
+
+<div class = "body">
+      <div id="reactEntry">
+        Loading ...
+      </div>
+      <!-- Load JavaScript -->
+      <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+</div>
+</html>
