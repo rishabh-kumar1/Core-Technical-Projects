@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>insta485</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/style.css">
+<head>
+	<title>
+		insta485
+	</title>
+</head>
+<div class="header">
+	<h1>
+		<a href="/" class = "leftalign">Home</a>
+		|
+		insta485
+		||||
+		<a href="/accounts/login/">login</a>
+	</h1>
+</div>	
+<form action="{{url_for('show_target')}}?target={{url_for('show_index')}}" method="post" enctype="multipart/form-data">
+	Photo
+  <input type="file" name="file" required/><br><br>
+  Name
+  <input type="text" name="fullname" required/><br><br>
+  Username
+  <input type="text" name="username" required/><br><br>
+  Email
+  <input type="text" name="email" required/><br><br>
+  Password
+  <input type="password" name="password" required/><br><br>	
+  <input type="submit" name="signup" value="sign up"/>
+  <input type="hidden" name="operation" value="create"/>
+</form>
+<p>Have an account?<b><a href='/accounts/login/'>Log in</a></b></p>
+</html>

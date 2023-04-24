@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>insta485</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<div class="header">
+	<a href="/" class="logo">Insta485</a>
+	<img src = "/static/uploads/instalogo.png" alt = "post image" width="30" height="30">
+	<div class="header-right">
+	  <a class="active" href="/explore/">Explore</a>
+	  <a href="/users/{{logname}}/">{{logname}}</a>
+	</div>
+</div>
+<div class = "body">
+	<a href = "{{ ''.join(['/users/', owner])}}/"><img src = "/uploads/{{owner_img_url}}" width = "75" height = "75" alt = "owner image"></a>
+	<a href = "{{ ''.join(['/users/', owner])}}/"> {{owner}}</a>
+	<a href = "{{ ''.join(['/posts/', postid])}}/">{{timestamp}}</a>
+	<br>
+
+	{% if owner == logname%}
+	<!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+	<form action="{{url_for('show_posts')}}?target={{url_for('get_users_slug', user_url_slug = logname)}}" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="operation" value="delete"/>
+		<input type="hidden" name="postid" value="{{postid}}"/>
+		<input type="submit" name="delete" value="delete this post"/>
+	</form>
+	{%endif%}
+
+	
+	<img src = "/uploads/{{img_url}}" alt = "image">
+	<br>
+	{% if likes != 1%}
+		{{likes}} likes
+	{% else %}
+		{{likes}} like
+	{% endif %}
+	<br>
+	{% for comment in comments %}
+		<a href = "{{ ''.join(['/users/', comment.owner])}}/"> {{comment.owner}} </a>
+		{{comment.text}}
+
+		{% if comment.owner == logname %}
+		<!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+		<form action="{{url_for('show_comments')}}?target={{url_for('get_postid_url_slug', postid_url_slug = postid)}}" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="operation" value="delete"/>
+			<input type="hidden" name="commentid" value="{{comment.commentid}}"/>
+			<input type="submit" name="uncomment" value="delete"/>
+		</form>
+		{% endif %}
+		<br>
+	{% endfor %}
+	{% if hasliked %}
+	<form action="{{url_for('show_likes')}}?target={{url_for('get_postid_url_slug', postid_url_slug = postid)}}" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="operation" value="unlike"/>
+		<input type="hidden" name="postid" value="{{postid}}"/>
+		<input type="submit" name="unlike" value="unlike"/>
+	</form>
+	{% else %}
+	<form action="{{url_for('show_likes')}}?target={{url_for('get_postid_url_slug', postid_url_slug = postid)}}" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="operation" value="like"/>
+		<input type="hidden" name="postid" value="{{postid}}"/>
+		<input type="submit" name="like" value="like"/>
+	</form>
+	{%endif%}
+
+	<form action="{{url_for('show_comments')}}?target={{url_for('get_postid_url_slug', postid_url_slug = postid)}}" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="operation" value="create"/>
+		<input type="hidden" name="postid" value="{{postid}}"/>
+		<input type="text" name="text" required/>
+		<input type="submit" name="comment" value="comment"/>
+	</form>
+	<br>
+	<br>
+</div>

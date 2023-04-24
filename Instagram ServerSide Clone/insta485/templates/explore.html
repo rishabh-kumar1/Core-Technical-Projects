@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>insta485</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<div class="header">
+	<a href="/" class="logo">Insta485</a>
+	<img src = "/static/uploads/instalogo.png" alt = "post image" width="30" height="30">
+	<div class="header-right">
+	  <a class="active" href="/explore/">Explore</a>
+	  <a href="/users/{{logname}}/">{{logname}}</a>
+	</div>
+</div>
+
+<div class = "body">
+	<h1> Discover People</h1>
+	<p style="padding: 10px; border: 2px solid black;">
+		{% for follow in not_following %}
+		<div class="follow">
+			<p style="text-align:left;">
+				<img src = "/uploads/{{follow.user_img_url}}" alt = "not following">
+				<a href = "{{ ''.join(['/users/', follow.username])}}/">{{follow.username}}</a>
+			<p style="text-align:right;">
+				<form action="{{url_for('show_following')}}?target={{url_for('explore')}}" method="post" enctype="multipart/form-data">
+					<input type="submit" name="follow" value="follow"/>
+					<input type="hidden" name="username" value="{{follow.username}}"/>
+					<input type="hidden" name="operation" value="follow"/>
+				</form>
+		</div>
+		{% endfor %}
+		<!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+</div>

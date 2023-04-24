@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>insta485</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+
+    <div class="header">
+        <a href="/" class="logo">Insta485</a>
+        <img src = "/static/uploads/instalogo.png" alt = "post image" width="30" height="30">
+        <div class="header-right">
+          <a class="active" href="/explore/">Explore</a>
+          <a href="/users/{{logname}}/">{{logname}}</a>
+        </div>
+      </div>
+
+<div class = "body">
+        {% for post in posts%}
+        <div class="card" style="width: 40rem;">
+          <div class="row"> 
+            <div class="column">
+              <a href="/users/{{post.owner}}/">
+                <img src="/uploads/{{post.owner_img_url}}" width="50" 
+                height="50" class="card-img-top" alt="..."> 
+              </a>
+            </div>
+            <div class="column">
+              <a href="/users/{{post.owner}}/" class="btn btn-primary">{{post.owner}}</a>
+            </div>
+            <div class="column">
+              <a href="/posts/{{post.postid}}/" class="btn btn-primary">{{post.timestamp}}</a>
+            </div>
+          </div>
+          <img src = "/uploads/{{post.filename}}" alt = "post image">
+          <div class="card-body">
+            <h5 class="card-title">
+              {% if post.likes == 1: %}
+                  {{ post.likes }} like
+              {% else %}
+                  {{ post.likes }} likes
+              {% endif %}
+            </h5>
+            
+            {% if post.hasliked %}
+            <form action="{{url_for('show_likes')}}?target={{url_for('show_index')}}" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="operation" value="unlike"/>
+                <input type="hidden" name="postid" value="{{post.postid}}"/>
+                <input type="submit" name="unlike" value="unlike"/>
+            </form>
+            {% else %}
+            <form action="{{url_for('show_likes')}}?target={{url_for('show_index')}}" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="operation" value="like"/>
+                <input type="hidden" name="postid" value="{{post.postid}}"/>
+                <input type="submit" name="like" value="like"/>
+            </form>
+            {%endif%}
+            <br>
+            {% for comment in post.comments %}
+                <a href = "{{ ''.join(['/users/', comment.owner])}}/"> {{comment.owner}} </a>
+                {{comment.text}}
+                {% if comment.owner == logname%}
+                <form action="{{url_for('show_comments')}}?target={{url_for('show_index')}}" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="operation" value="delete"/>
+                    <input type="hidden" name="commentid" value="{{comment.commentid}}"/>
+                    <input type="submit" name="uncomment" value="delete"/>
+                  </form>
+                {% endif %}
+                <br>
+
+            {% endfor %}
+
+            <form action="{{url_for('show_comments')}}?target={{url_for('show_index')}}" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="operation" value="create"/>
+                <input type="hidden" name="postid" value="{{post.postid}}"/>
+                <input type="text" name="text" required/>
+                <input type="submit" name="comment" value="comment"/>
+            </form>
+            
+            
+          </div>
+        </div>
+
+        <div style = "height: 2.5rem;"> </div>
+      {%endfor%}
+</div>
+</html>

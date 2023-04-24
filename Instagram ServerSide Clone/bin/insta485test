@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# insta485test
+#
+#
+# Stop on errors, print commands
+set -Eeuo pipefail
+set -x
+# Runs pycodestyle on insta485
+pycodestyle insta485
+# Runs pydocstyle on insta485
+pydocstyle insta485
+# Runs pylint
+pylint --disable=cyclic-import --unsafe-load-any-extension=y insta485
+# Clean
+pytest -v tests
+    
