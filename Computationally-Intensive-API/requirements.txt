@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+celery
+pydantic
+numpy
+prometheus_client
+redis
+kombu
+locust

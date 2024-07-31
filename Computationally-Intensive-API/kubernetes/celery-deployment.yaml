@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: celery
+  template:
+    metadata:
+      labels:
+        app: celery
+    spec:
+      containers:
+      - name: celery
+        image: rishabh148/celery-worker:latest
+        env:
+        - name: CELERY_BROKER_URL
+          value: "pyamqp://guest@rabbitmq-service//"
+        - name: CELERY_RESULT_BACKEND
+          value: "redis://redis-service:6379/0"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"
+        ports:
+        - containerPort: 80
+        livenessProbe:
+          exec:
+            command:
+            - celery
+            - -A
+            - app.tasks.celery
+            - inspect
+            - ping
+          initialDelaySeconds: 15
+          periodSeconds: 30
+          timeoutSeconds: 5  # Increase the timeout
+          failureThreshold: 5
+        readinessProbe:
+          exec:
+            command:
+            - celery
+            - -A
+            - app.tasks.celery
+            - inspect
+            - ping
+          initialDelaySeconds: 15
+          periodSeconds: 30
+          timeoutSeconds: 5  # Increase the timeout
+          failureThreshold: 5
